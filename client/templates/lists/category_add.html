@@ -1,0 +1,26 @@
+<template name="categoryAdd">
+    <div class="post" id="addButton">
+        <div class="post-content">
+            <h3>+ Add</h3>
+        </div>
+        <!-- <a href="{{pathFor 'categoryAddForm'}}" class="discuss btn btn-default">Discuss</a> -->
+    </div>
+</template>
+
+<template name="categoryAddForm">
+    <form class="main form page">
+        <div class="form-group">
+            <label class="control-label" for="name">Name</label>
+            <div class="controls">
+                <input name="name" id="name" type="text" value="" placeholder="Name of Category" class="form-control"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="allocation">Allocation</label>
+            <div class="controls">
+                <input name="allocation" id="allocation" type="text" value="" placeholder="Amount per Month" class="form-control"/>
+            </div>
+        </div>
+        <input type="submit" value="Add" class="btn btn-primary"/>
+    </form>
+</template>

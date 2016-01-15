@@ -2,14 +2,14 @@ if (Entries.find().count() === 0) {
   Entries.insert({
     _id: "4303013bd675d9c836b7f49e",
     date: new Date(),
-    name: 'Meijer',
+    description: 'Meijer',
     amount: 45.65
   });
 
   Entries.insert({
     _id: "9f6ac305d884d4c3b731cd75",
     date: new Date(),
-    name: 'Rishis',
+    description: 'Rishis',
     amount: 80.23
   });
 }

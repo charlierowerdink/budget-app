@@ -1,0 +1,32 @@
+<template name="categoryDropDown">
+    <option> {{ name }} </option>
+</template>
+
+
+<template name="entryAddForm">
+    <form class="main form page">
+        <div class="form-group">
+            <label class="control-label" for="description">Description</label>
+            <div class="controls">
+                <input name="description" id="description" type="text" value="" placeholder="Description of Purchase" class="form-control"/>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="category">Category</label>
+            <select class="form-control" id="category" name="category">
+                {{ #each categories }}
+                    {{> categoryDropDown }}
+                {{ /each }}
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label" for="amount">Amount</label>
+            <div class="controls">
+                <input name="amount" id="amount" type="text" value="" placeholder="Amount Spent" class="form-control"/>
+            </div>
+        </div>
+        <input type="submit" value="Add" class="btn btn-primary"/>
+    </form>
+</template>
